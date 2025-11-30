@@ -6,7 +6,12 @@ import { Ship, Clock, MapPin, Shield, Leaf, Waves, Users, Camera } from "lucide-
 import catamaranImage from "@/assets/catamaran.jpg";
 import heroImage from "@/assets/hero-parrachos.jpg";
 
+import { useNavigate } from "react-router-dom";
+
 const AboutTour = () => {
+
+  const navigate = useNavigate();
+
   const tourDetails = [
     {
       icon: Ship,
@@ -243,7 +248,7 @@ const AboutTour = () => {
               variant="outline"
               className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
             >
-              <a href="/servicos">Ver Serviços Extras</a>
+              <button onClick={() => navigate("/servicos")}>Ver Serviços Extras</button>
             </Button>
           </div>
         </div>

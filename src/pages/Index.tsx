@@ -7,8 +7,12 @@ import heroImage from "@/assets/hero-parrachos.jpg";
 import catamaranImage from "@/assets/catamaran.jpg";
 import divingImage from "@/assets/diving-cylinder.jpg";
 import snorkelingImage from "@/assets/snorkeling.jpg";
+import { useNavigate } from "react-router-dom";
 
 const Index = () => {
+
+  const navigate = useNavigate();
+
   const features = [
     {
       icon: ShieldCheck,
@@ -35,7 +39,7 @@ const Index = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
-      
+
       {/* Hero Section */}
       <section className="relative pt-20 min-h-screen flex items-center">
         <div
@@ -44,7 +48,7 @@ const Index = () => {
         >
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10 py-20">
           <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
@@ -73,7 +77,7 @@ const Index = () => {
                 variant="outline"
                 className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
               >
-                <a href="/sobre">Saiba Mais</a>
+                <Button onClick={() => navigate("/servicos")}>Saiba Mais</Button>
               </Button>
             </div>
           </div>
@@ -125,8 +129,12 @@ const Index = () => {
                   Localizado a apenas <span className="text-primary font-semibold">45 km de Natal</span>, este é um dos principais pontos turísticos do Rio Grande do Norte.
                 </p>
               </div>
-              <Button asChild className="mt-6 bg-gradient-ocean text-white border-0" size="lg">
-                <a href="/sobre">Saiba Mais Sobre o Passeio</a>
+              <Button 
+                asChild className="mt-6 bg-gradient-ocean text-white border-0"
+                size="lg"
+                onClick={() => navigate("/servicos")}
+              >
+                <button>Saiba Mais Sobre o Passeio</button>
               </Button>
             </div>
             <div className="relative">
@@ -145,7 +153,7 @@ const Index = () => {
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0" style={{ backgroundImage: `url(${divingImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </div>
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
@@ -174,8 +182,12 @@ const Index = () => {
                   <span>Disponível para maiores de 10 anos</span>
                 </li>
               </ul>
-              <Button asChild size="lg" className="bg-accent hover:bg-accent/90 text-white border-0">
-                <a href="/servicos">Ver Todos os Serviços Extras</a>
+              <Button
+                asChild size="lg"
+                className="bg-accent hover:bg-accent/90 text-white border-0"
+                onClick={() => navigate("/servicos")}
+              >
+                <button>Ver Todos os Serviços Extras</button>
               </Button>
             </div>
           </div>
