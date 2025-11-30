@@ -16,7 +16,7 @@ const Contact = () => {
             <MessageCircle className="w-20 h-20 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Entre em Contato</h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Estamos prontos para ajudar você a planejar sua aventura nos Parrachos de Maracajaú
+              Estamos prontos para ajudar você a planejar sua aventura nos Parrachos Náutica
             </p>
           </div>
         </div>
@@ -51,7 +51,7 @@ const Contact = () => {
                 <p className="text-muted-foreground mb-4">(84) 99999-9999</p>
                 <Button asChild className="w-full bg-gradient-ocean text-white border-0">
                   <a
-                    href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+                    href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -253,7 +253,7 @@ const Contact = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >

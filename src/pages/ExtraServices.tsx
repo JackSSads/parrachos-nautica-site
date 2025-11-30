@@ -74,7 +74,7 @@ const ExtraServices = () => {
           <div className="max-w-3xl animate-fade-in-up">
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Serviços Extras</h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Potencialize sua experiência nos Parrachos de Maracajaú com nossos serviços adicionais.
+              Potencialize sua experiência nos Parrachos Náutica com nossos serviços adicionais.
             </p>
           </div>
         </div>

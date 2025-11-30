@@ -187,7 +187,7 @@ const AboutTour = () => {
             <Leaf className="w-16 h-16 text-primary mx-auto mb-6" />
             <h2 className="text-4xl font-bold text-foreground mb-6">Turismo Sustentável</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
-              Os Parrachos de Maracajaú são uma Área de Proteção Ambiental (APA) monitorada pelo IDEMA. Nosso compromisso é proporcionar uma experiência inesquecível preservando este patrimônio natural. Seguimos rigorosos protocolos ambientais e educamos nossos visitantes sobre a importância da conservação marinha.
+              Os Parrachos Náutica são uma Área de Proteção Ambiental (APA) monitorada pelo IDEMA. Nosso compromisso é proporcionar uma experiência inesquecível preservando este patrimônio natural. Seguimos rigorosos protocolos ambientais e educamos nossos visitantes sobre a importância da conservação marinha.
             </p>
             <div className="grid md:grid-cols-3 gap-6 text-left">
               <Card>
@@ -230,7 +230,7 @@ const AboutTour = () => {
               className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
             >
               <a
-                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >

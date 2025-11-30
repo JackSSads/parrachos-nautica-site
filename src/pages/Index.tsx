@@ -51,7 +51,7 @@ const Index = () => {
               Descubra o Aquário Natural do RN
             </h1>
             <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
-              Mergulhe nos Parrachos de Maracajaú, um paraíso preservado a 7 km da costa com águas cristalinas e vida marinha exuberante.
+              Mergulhe nos Parrachos Náutica, um paraíso preservado a 7 km da costa com águas cristalinas e vida marinha exuberante.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
@@ -60,7 +60,7 @@ const Index = () => {
                 className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
               >
                 <a
-                  href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+                  href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -116,7 +116,7 @@ const Index = () => {
               <h2 className="text-4xl font-bold text-foreground mb-6">O Passeio</h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p>
-                  Embarque em nosso <span className="text-primary font-semibold">catamarã nativo homologado</span> e navegue por 30 minutos (5 milhas náuticas) até alcançar os famosos Parrachos de Maracajaú.
+                  Embarque em nosso <span className="text-primary font-semibold">catamarã nativo homologado</span> e navegue por 30 minutos (5 milhas náuticas) até alcançar os famosos Parrachos Náutica.
                 </p>
                 <p>
                   Durante <span className="text-primary font-semibold">1h30 de permanência</span>, você terá acesso a máscara e snorkel para explorar este aquário natural em alto-mar, com acompanhamento completo de nossa equipe certificada.
@@ -132,7 +132,7 @@ const Index = () => {
             <div className="relative">
               <img
                 src={catamaranImage}
-                alt="Catamarã nos Parrachos de Maracajaú"
+                alt="Catamarã nos Parrachos Náutica"
                 className="rounded-lg shadow-xl animate-float"
               />
             </div>
@@ -238,7 +238,7 @@ const Index = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >

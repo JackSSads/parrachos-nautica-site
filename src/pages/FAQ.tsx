@@ -21,7 +21,7 @@ const FAQ = () => {
     },
     {
       question: "Qual é o destino do passeio?",
-      answer: "O destino é os Parrachos de Maracajaú, um dos principais pontos turísticos do Rio Grande do Norte. Localizados a aproximadamente 7 km da costa, em Maxaranguape, os Parrachos formam um grande aquário natural com águas cristalinas e rica biodiversidade marinha. É uma Área de Proteção Ambiental (APA) monitorada pelo IDEMA.",
+      answer: "O destino é os Parrachos Náutica, um dos principais pontos turísticos do Rio Grande do Norte. Localizados a aproximadamente 7 km da costa, em Maxaranguape, os Parrachos formam um grande aquário natural com águas cristalinas e rica biodiversidade marinha. É uma Área de Proteção Ambiental (APA) monitorada pelo IDEMA.",
     },
     {
       question: "Como faço para reservar o passeio?",
@@ -45,7 +45,7 @@ const FAQ = () => {
     },
     {
       question: "Qual é a melhor época para fazer o passeio?",
-      answer: "Os Parrachos de Maracajaú podem ser visitados durante todo o ano. Os meses de setembro a março geralmente apresentam melhores condições de visibilidade na água. No entanto, o passeio acontece regularmente durante todo o ano, sempre respeitando as condições climáticas e de maré favoráveis.",
+      answer: "Os Parrachos Náutica podem ser visitados durante todo o ano. Os meses de setembro a março geralmente apresentam melhores condições de visibilidade na água. No entanto, o passeio acontece regularmente durante todo o ano, sempre respeitando as condições climáticas e de maré favoráveis.",
     },
     {
       question: "Como é a estrutura na praia de embarque?",
@@ -64,7 +64,7 @@ const FAQ = () => {
             <HelpCircle className="w-20 h-20 mx-auto mb-6" />
             <h1 className="text-5xl md:text-6xl font-bold mb-6">Perguntas Frequentes</h1>
             <p className="text-xl text-white/90 leading-relaxed">
-              Tire todas as suas dúvidas sobre o passeio aos Parrachos de Maracajaú
+              Tire todas as suas dúvidas sobre o passeio aos Parrachos Náutica
             </p>
           </div>
         </div>
@@ -112,7 +112,7 @@ const FAQ = () => {
                 className="bg-gradient-ocean text-white border-0"
               >
                 <a
-                  href="https://wa.me/5584999999999?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos de Maracajaú"
+                  href="https://wa.me/5584999999999?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos Náutica"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -137,7 +137,7 @@ const FAQ = () => {
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Pronto Para Sua Aventura?</h2>
           <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
-            Reserve agora seu lugar e viva uma experiência inesquecível nos Parrachos de Maracajaú!
+            Reserve agora seu lugar e viva uma experiência inesquecível nos Parrachos Náutica!
           </p>
           <Button
             asChild
@@ -145,7 +145,7 @@ const FAQ = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >

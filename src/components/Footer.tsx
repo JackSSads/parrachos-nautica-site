@@ -1,4 +1,5 @@
-import { Anchor, Phone, MapPin, Mail } from "lucide-react";
+import { Phone, MapPin, Mail } from "lucide-react";
+import LogoBranca from "../assets/logo_branca.png";
 
 const Footer = () => {
   return (
@@ -7,8 +8,8 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <Anchor className="w-8 h-8" />
-              <span className="font-bold text-xl">Parrachos de Maracajaú</span>
+              <img src={LogoBranca} className="p-1 w-28 rounded-xl" />
+              <span className="font-bold text-xl">Parrachos Náutica</span>
             </div>
             <p className="text-white/80">
               Venha viver uma experiência única no aquário natural em alto-mar do Rio Grande do Norte!
@@ -20,7 +21,7 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <span>(84) 99999-9999</span>
+                <span>(84) 9 </span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
@@ -46,7 +47,7 @@ const Footer = () => {
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} Parceiros Parrachos de Maracajaú. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Parceiros Parrachos Náutica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

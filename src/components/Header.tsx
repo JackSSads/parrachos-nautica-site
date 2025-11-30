@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Anchor } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import Logo from "../assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,8 +20,8 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center gap-2 text-primary font-bold text-xl">
-            <Anchor className="w-8 h-8" />
-            <span className="hidden sm:inline">Parrachos de Maracajaú</span>
+            <img src={Logo} className="p-1 w-28 rounded-xl" />
+            <span className="hidden sm:inline">Parrachos Náutica</span>
           </NavLink>
 
           {/* Desktop Navigation */}
@@ -37,7 +38,7 @@ const Header = () => {
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0">
               <a
-                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -72,7 +73,7 @@ const Header = () => {
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0 w-full">
               <a
-                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos de Maracajaú"
+                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >
