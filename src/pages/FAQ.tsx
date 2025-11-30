@@ -9,7 +9,12 @@ import {
 } from "@/components/ui/accordion";
 import { Waves, HelpCircle } from "lucide-react";
 
+import { useNavigate } from "react-router-dom";
+
 const FAQ = () => {
+
+  const navigate = useNavigate();
+
   const faqs = [
     {
       question: "Posso levar comida e bebida para o passeio?",
@@ -125,7 +130,7 @@ const FAQ = () => {
                 variant="outline"
                 className="border-primary text-primary hover:bg-primary hover:text-white"
               >
-                <a href="/contato">Página de Contato</a>
+                <button onClick={() => navigate("/contato")}>Página de Contato</button>
               </Button>
             </div>
           </div>
