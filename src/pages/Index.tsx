@@ -120,7 +120,7 @@ const Index = () => {
               <h2 className="text-4xl font-bold text-foreground mb-6">O Passeio</h2>
               <div className="space-y-4 text-muted-foreground text-lg">
                 <p>
-                  Embarque em nosso <span className="text-primary font-semibold">catamarã nativo homologado</span> e navegue por 30 minutos (5 milhas náuticas) até alcançar os famosos Parrachos Náutica.
+                  Embarque em nosso <span className="text-primary font-semibold">catamarã nativo homologado</span> e navegue por 30 minutos (5 milhas náuticas) até alcançar os famosos Parrachos de Maracajaú.
                 </p>
                 <p>
                   Durante <span className="text-primary font-semibold">1h30 de permanência</span>, você terá acesso a máscara e snorkel para explorar este aquário natural em alto-mar, com acompanhamento completo de nossa equipe certificada.
