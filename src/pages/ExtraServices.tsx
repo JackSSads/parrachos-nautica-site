@@ -113,7 +113,7 @@ const ExtraServices = () => {
                   className="bg-gradient-ocean text-white border-0"
                 >
                   <a
-                    href="https://wa.me/5584999999999?text=Olá! Gostaria de saber mais sobre o mergulho com cilindro"
+                    href="https://wa.me/5584999959793?text=Olá! Gostaria de saber mais sobre o mergulho com cilindro"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -171,7 +171,7 @@ const ExtraServices = () => {
                     className="w-full border-primary text-primary hover:bg-primary hover:text-white"
                   >
                     <a
-                      href={`https://wa.me/5584999999999?text=Olá! Gostaria de saber mais sobre: ${service.title}`}
+                      href={`https://wa.me/5584999959793?text=Olá! Gostaria de saber mais sobre: ${service.title}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
@@ -233,7 +233,7 @@ const ExtraServices = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva e saber mais sobre os serviços extras"
+              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva e saber mais sobre os serviços extras"
               target="_blank"
               rel="noopener noreferrer"
             >

@@ -38,7 +38,7 @@ const Header = () => {
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0">
               <a
-                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -73,7 +73,7 @@ const Header = () => {
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0 w-full">
               <a
-                href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >

@@ -35,7 +35,7 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Telefone</h3>
-                <p className="text-muted-foreground mb-4">(84) 99999-9999</p>
+                <p className="text-muted-foreground mb-4">(84) 9 9995-9793</p>
                 <Button asChild variant="outline" className="w-full">
                   <a href="tel:+5584999999999">Ligar Agora</a>
                 </Button>
@@ -48,10 +48,10 @@ const Contact = () => {
                   <MessageCircle className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
-                <p className="text-muted-foreground mb-4">(84) 99999-9999</p>
+                <p className="text-muted-foreground mb-4">(84) 9 9995-9793</p>
                 <Button asChild className="w-full bg-gradient-ocean text-white border-0">
                   <a
-                    href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                    href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -67,9 +67,9 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">E-mail</h3>
-                <p className="text-muted-foreground mb-4 text-sm">contato@parrachosmaracajau.com.br</p>
+                <p className="text-muted-foreground mb-4 text-sm">parrachosnautica2@gmail.com</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a href="mailto:contato@parrachosmaracajau.com.br">Enviar E-mail</a>
+                  <a href="mailto:parrachosnautica2@gmail.com">Enviar E-mail</a>
                 </Button>
               </CardContent>
             </Card>
@@ -108,12 +108,12 @@ const Contact = () => {
                     <div className="w-12 h-12 bg-gradient-ocean rounded-full flex items-center justify-center">
                       <Clock className="w-6 h-6 text-white" />
                     </div>
-                    <h2 className="text-2xl font-bold text-foreground">Horário de Funcionamento</h2>
+                    <h2 className="text-2xl font-bold text-foreground">Horário de Atendimento</h2>
                   </div>
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="text-muted-foreground">Segunda a Domingo</span>
-                      <span className="text-foreground font-semibold">8:00 - 17:00</span>
+                      <span className="text-foreground font-semibold">8:00 - 20:00</span>
                     </div>
                     <div className="bg-secondary/20 p-4 rounded-lg">
                       <p className="text-sm text-muted-foreground">
@@ -253,7 +253,7 @@ const Contact = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >

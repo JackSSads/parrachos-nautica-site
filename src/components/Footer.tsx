@@ -21,11 +21,11 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <span>(84) 9 </span>
+                <span>(84) 9 9995-9793</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
-                <span>contato@parrachosmaracajau.com.br</span>
+                <span>parrachosnautica2@gmail.com</span>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
@@ -35,19 +35,19 @@ const Footer = () => {
           </div>
 
           <div>
-            <h3 className="font-semibold text-lg mb-4">Horário de Funcionamento</h3>
+            <h3 className="font-semibold text-lg mb-4">Horário de Atendimento</h3>
             <div className="space-y-2 text-white/80">
               <p>Segunda a Domingo</p>
-              <p className="font-semibold text-white">8:00 - 17:00</p>
+              <p className="font-semibold text-white">8:00 - 20:00</p>
               <p className="text-sm mt-4">
-                *Passeios sujeitos a condições climáticas favoráveis
+                *Passeios sujeitos a condições climáticas favoráveis e horários da maré
               </p>
             </div>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/20 text-center text-white/60 text-sm">
-          <p>© {new Date().getFullYear()} Parceiros Parrachos Náutica. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Parrachos Náutica. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

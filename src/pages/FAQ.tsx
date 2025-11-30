@@ -112,7 +112,7 @@ const FAQ = () => {
                 className="bg-gradient-ocean text-white border-0"
               >
                 <a
-                  href="https://wa.me/5584999999999?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos Náutica"
+                  href="https://wa.me/5584999959793?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos Náutica"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -145,7 +145,7 @@ const FAQ = () => {
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
             <a
-              href="https://wa.me/5584999999999?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >
