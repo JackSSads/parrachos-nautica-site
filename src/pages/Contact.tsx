@@ -37,7 +37,7 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-2">Telefone</h3>
                 <p className="text-muted-foreground mb-4">(84) 9 9995-9793</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a href="tel:+5584999999999">Ligar Agora</a>
+                  <a href="tel:+5584999959793">Ligar Agora</a>
                 </Button>
               </CardContent>
             </Card>
