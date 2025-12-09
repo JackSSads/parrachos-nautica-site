@@ -2,7 +2,7 @@ import { useState } from "react";
 import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
-import Logo from "../assets/logo.png";
+import Logo from "@/assets/logo.png";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -32,6 +32,7 @@ const Header = () => {
                 to={link.to}
                 className="text-foreground hover:text-primary transition-colors"
                 activeClassName="text-primary font-semibold"
+                onClick={() => window.scrollTo({ top: 0 })}
               >
                 {link.label}
               </NavLink>
@@ -66,7 +67,7 @@ const Header = () => {
                 to={link.to}
                 className="text-foreground hover:text-primary transition-colors py-2"
                 activeClassName="text-primary font-semibold"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={() => { setIsMenuOpen(false), window.scrollTo({ top: 0 }) }}
               >
                 {link.label}
               </NavLink>
