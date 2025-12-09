@@ -2,66 +2,45 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import { Waves, ShieldCheck, Leaf, Clock, MapPin, Users } from "lucide-react";
-import heroImage from "@/assets/hero-parrachos.jpg";
+import Parrachos from "@/assets/parrachos.jpg";
 import catamaranImage from "@/assets/catamaran.jpg";
-import divingImage from "@/assets/diving-cylinder.jpg";
-import snorkelingImage from "@/assets/snorkeling.jpg";
+import Cilindro07 from "@/assets/cilindro07.jpg";
 import { useNavigate } from "react-router-dom";
+import { Waves, ShieldCheck, Leaf, Users } from "lucide-react";
+
+import ProductCarousel from "@/components/ProductsCarousel";
+import { features, galery_data } from "@/data/productData";
 
 const Index = () => {
 
   const navigate = useNavigate();
-
-  const features = [
-    {
-      icon: ShieldCheck,
-      title: "Segurança Total",
-      description: "Catamarã homologado pela Marinha e tripulação certificada",
-    },
-    {
-      icon: Leaf,
-      title: "Sustentável",
-      description: "Área de preservação ambiental monitorada pelo IDEMA",
-    },
-    {
-      icon: Clock,
-      title: "Experiência Completa",
-      description: "1h30 de mergulho livre nos parrachos + equipamentos inclusos",
-    },
-    {
-      icon: Users,
-      title: "Para Toda Família",
-      description: "Adequado para crianças a partir de 3 anos com supervisão",
-    },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
 
       {/* Hero Section */}
-      <section className="relative pt-20 min-h-screen flex items-center">
+      <section className="relative pt-16 md:pt-20 min-h-[70vh] md:min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${heroImage})` }}
+          style={{ backgroundImage: `url(${Parrachos})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
         </div>
 
-        <div className="container mx-auto px-4 relative z-10 py-20">
+        <div className="container mx-auto px-4 relative z-10 py-12 md:py-20">
           <div className="max-w-3xl animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-bold text-white mb-6 leading-tight">
               Descubra o Aquário Natural do RN
             </h1>
-            <p className="text-xl md:text-2xl text-white/95 mb-8 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
               Mergulhe nos Parrachos Náutica, um paraíso preservado a 7 km da costa com águas cristalinas e vida marinha exuberante.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
                 asChild
                 size="lg"
-                className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
+                className="bg-accent hover:bg-accent/90 text-white text-lg px-6 py-3 sm:px-8 sm:py-6 border-0"
               >
                 <a
                   href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
@@ -75,7 +54,7 @@ const Index = () => {
                 asChild
                 size="lg"
                 variant="outline"
-                className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary text-lg px-8 py-6"
+                className="bg-white/10 backdrop-blur-sm border-white text-white hover:bg-white hover:text-primary text-lg px-6 py-3 sm:px-8 sm:py-6"
               >
                 <Button onClick={() => navigate("/servicos")}>Saiba Mais</Button>
               </Button>
@@ -83,10 +62,20 @@ const Index = () => {
           </div>
         </div>
 
+        <div className="p-6 sm:p-10 hidden xl:flex">
+          <h1 className="text-3xl sm:text-4xl font-bold text-center mb-10">Nossos Passeios</h1>
+          <ProductCarousel />
+        </div>
+
         <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-wave">
           <Waves className="w-8 h-8 text-white" />
         </div>
       </section>
+
+      <div className="p-6 sm:p-10 flex flex-col xl:hidden">
+          <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8">Nossos Passeios</h1>
+          <ProductCarousel />
+        </div>
 
       {/* Features Section */}
       <section className="py-20 bg-background">
@@ -96,10 +85,10 @@ const Index = () => {
             <p className="text-xl text-muted-foreground">Experiência única com segurança e sustentabilidade</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {features.map((feature, index) => (
               <Card key={index} className="border-border hover:shadow-lg transition-all duration-300 animate-fade-in-up" style={{ animationDelay: `${index * 100}ms` }}>
-                <CardContent className="p-6 text-center">
+                <CardContent className="p-4 sm:p-6 text-center">
                   <div className="w-16 h-16 mx-auto mb-4 bg-gradient-light rounded-full flex items-center justify-center">
                     <feature.icon className="w-8 h-8 text-primary" />
                   </div>
@@ -115,7 +104,7 @@ const Index = () => {
       {/* About Section */}
       <section className="py-20 bg-muted">
         <div className="container mx-auto px-4">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <h2 className="text-4xl font-bold text-foreground mb-6">O Passeio</h2>
               <div className="space-y-4 text-muted-foreground text-lg">
@@ -129,7 +118,7 @@ const Index = () => {
                   Localizado a apenas <span className="text-primary font-semibold">45 km de Natal</span>, este é um dos principais pontos turísticos do Rio Grande do Norte.
                 </p>
               </div>
-              <Button 
+              <Button
                 asChild className="mt-6 bg-gradient-ocean text-white border-0"
                 size="lg"
                 onClick={() => navigate("/servicos")}
@@ -141,7 +130,7 @@ const Index = () => {
               <img
                 src={catamaranImage}
                 alt="Catamarã nos Parrachos Náutica"
-                className="rounded-lg shadow-xl animate-float"
+                className="rounded-lg shadow-xl animate-float w-full h-auto max-h-80 object-cover"
               />
             </div>
           </div>
@@ -151,16 +140,16 @@ const Index = () => {
       {/* Diving Highlight Section */}
       <section className="py-20 bg-gradient-deep text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{ backgroundImage: `url(${divingImage})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div className="absolute inset-0" style={{ backgroundImage: `url(${Cilindro07})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <img
-                src={divingImage}
+                src={Cilindro07}
                 alt="Mergulho com cilindro nos Parrachos"
-                className="rounded-lg shadow-2xl"
+                className="rounded-lg shadow-2xl w-full h-auto object-cover"
               />
             </div>
             <div>
@@ -194,45 +183,27 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Gallery Section */}
-      <section className="py-20 bg-background">
+      {/* Gallery */}
+      <section className="mt-8 mb-8 bg-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold text-foreground mb-4">Galeria</h2>
             <p className="text-xl text-muted-foreground">Veja as belezas que te esperam</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <div className="relative overflow-hidden rounded-lg group cursor-pointer h-80">
-              <img
-                src={heroImage}
-                alt="Recifes de coral"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-semibold text-xl">Recifes Preservados</span>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
+            {galery_data.map((img, key) => (
+              <div className="relative overflow-hidden rounded-lg group cursor-pointer h-56 sm:h-72 md:h-80" key={key}>
+                <img
+                  src={img.img}
+                  alt={`${img.subtitle}`}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
+                  <span className="text-white font-semibold text-xl">{img.subtitle}</span>
+                </div>
               </div>
-            </div>
-            <div className="relative overflow-hidden rounded-lg group cursor-pointer h-80">
-              <img
-                src={divingImage}
-                alt="Mergulho profissional"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-semibold text-xl">Mergulho Profissional</span>
-              </div>
-            </div>
-            <div className="relative overflow-hidden rounded-lg group cursor-pointer h-80">
-              <img
-                src={snorkelingImage}
-                alt="Snorkeling"
-                className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                <span className="text-white font-semibold text-xl">Snorkeling Livre</span>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
@@ -240,14 +211,14 @@ const Index = () => {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-ocean text-white">
         <div className="container mx-auto px-4 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Pronto Para Sua Aventura?</h2>
-          <p className="text-xl text-white/90 mb-8 max-w-2xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-6">Pronto Para Sua Aventura?</h2>
+          <p className="text-base sm:text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto">
             Reserve agora seu lugar no passeio mais emocionante do Rio Grande do Norte!
           </p>
           <Button
             asChild
             size="lg"
-            className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
+            className="bg-accent hover:bg-accent/90 text-white text-lg px-6 py-3 sm:px-8 sm:py-6 border-0"
           >
             <a
               href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"

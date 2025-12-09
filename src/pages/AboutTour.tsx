@@ -2,48 +2,17 @@ import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Ship, Clock, MapPin, Shield, Leaf, Waves, Users, Camera } from "lucide-react";
+import { Shield, Leaf, Waves, Camera } from "lucide-react";
 import catamaranImage from "@/assets/catamaran.jpg";
-import heroImage from "@/assets/hero-parrachos.jpg";
+import Parrachos from "@/assets/parrachos.jpg";
+
+import { tourDetails } from "@/data/productData";
 
 import { useNavigate } from "react-router-dom";
 
 const AboutTour = () => {
 
   const navigate = useNavigate();
-
-  const tourDetails = [
-    {
-      icon: Ship,
-      title: "Embarcação",
-      description: "Catamarã nativo homologado pela Marinha do Brasil, seguro e confortável para toda a família",
-    },
-    {
-      icon: Shield,
-      title: "Tripulação",
-      description: "Equipe certificada e treinada para garantir sua segurança durante todo o passeio",
-    },
-    {
-      icon: Clock,
-      title: "Duração",
-      description: "30 minutos de ida + 1h30 nos parrachos + 30 minutos de volta = 2h30 de experiência",
-    },
-    {
-      icon: MapPin,
-      title: "Localização",
-      description: "A 45 km de Natal, os Parrachos ficam a 7 km da costa, em Maxaranguape/RN",
-    },
-    {
-      icon: Leaf,
-      title: "Preservação",
-      description: "Área de Proteção Ambiental (APA) monitorada pelo IDEMA - turismo sustentável",
-    },
-    {
-      icon: Users,
-      title: "Equipamentos",
-      description: "Máscara e snorkel inclusos, coletes salva-vidas disponíveis para todas as idades",
-    },
-  ];
 
   return (
     <div className="min-h-screen flex flex-col">
@@ -172,7 +141,7 @@ const AboutTour = () => {
             </div>
             <div className="relative overflow-hidden rounded-lg shadow-xl h-96">
               <img
-                src={heroImage}
+                src={Parrachos}
                 alt="Parrachos"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />

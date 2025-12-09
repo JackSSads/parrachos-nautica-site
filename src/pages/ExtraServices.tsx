@@ -3,67 +3,11 @@ import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { Waves, Cylinder, Camera, Glasses, Coffee } from "lucide-react";
-import divingImage from "@/assets/diving-cylinder.jpg";
+import { Waves, Cylinder } from "lucide-react";
+
+import { services } from "@/data/productData";
 
 const ExtraServices = () => {
-  const services = [
-    {
-      icon: Cylinder,
-      title: "Mergulho com Cilindro",
-      featured: true,
-      description: "A experiência mais completa para explorar o fundo dos Parrachos",
-      details: [
-        "Acompanhamento de profissional credenciado",
-        "Equipamento completo fornecido",
-        "Ideal para iniciantes e experientes",
-        "Disponível para maiores de 10 anos",
-        "Duração: aproximadamente 30 minutos",
-        "Explore profundidades que o snorkel não alcança",
-      ],
-      image: divingImage,
-    },
-    {
-      icon: Camera,
-      title: "Fotos Subaquáticas",
-      description: "Registre seus melhores momentos embaixo d'água",
-      details: [
-        "Fotógrafo profissional experiente",
-        "Câmera subaquática de alta qualidade",
-        "Fotos em alta resolução",
-        "Entrega digital das fotos",
-        "Edição profissional incluída",
-        "Capte a beleza da vida marinha",
-      ],
-    },
-    {
-      icon: Glasses,
-      title: "Máscara Full Face",
-      description: "Conforto e visão panorâmica durante o mergulho",
-      details: [
-        "Maior campo de visão",
-        "Respiração natural pelo nariz e boca",
-        "Ideal para quem tem dificuldade com snorkel tradicional",
-        "Higienizada e desinfetada",
-        "Disponível em vários tamanhos",
-        "Comunicação mais fácil embaixo d'água",
-      ],
-    },
-    {
-      icon: Coffee,
-      title: "Bar a Bordo",
-      description: "Bebidas e petiscos durante o passeio",
-      details: [
-        "Bebidas geladas e quentinhas",
-        "Petiscos variados",
-        "Água mineral disponível",
-        "Opções alcoólicas e não-alcoólicas",
-        "Serviço durante a navegação",
-        "Preços acessíveis",
-      ],
-    },
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
       <Header />
@@ -123,9 +67,9 @@ const ExtraServices = () => {
               </div>
               <div className="relative">
                 <img
-                  src={divingImage}
+                  src={services[0].image}
                   alt="Mergulho com cilindro"
-                  className="rounded-lg shadow-2xl animate-float"
+                  className="rounded-lg shadow-2xl animate-float max-h-[400px] w-full object-cover"
                 />
                 <div className="absolute -bottom-6 -right-6 bg-accent text-white p-6 rounded-lg shadow-xl">
                   <p className="text-sm font-semibold">Maiores de 10 anos</p>
