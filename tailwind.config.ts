@@ -13,6 +13,9 @@ export default {
       },
     },
     extend: {
+      transitionTimingFunction: {
+        carousel: "cubic-bezier(0.25, 0.8, 0.25, 1)",
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
