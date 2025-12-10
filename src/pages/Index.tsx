@@ -1,10 +1,13 @@
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import { Galery } from "@/components/Galery";
+
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-import Parrachos from "@/assets/parrachos.jpg";
-import catamaranImage from "@/assets/catamaran.jpg";
-import Cilindro07 from "@/assets/cilindro07.jpg";
+
+import Parrachos from "@/assets/parrachos/f_aerea.webp";
+import catamaranImage from "@/assets/catamara/catamara.webp";
+import Cilindro07 from "@/assets/cilindro/cilindro07.webp";
 import { useNavigate } from "react-router-dom";
 import { Waves, ShieldCheck, Leaf, Users } from "lucide-react";
 
@@ -73,9 +76,9 @@ const Index = () => {
       </section>
 
       <div className="p-6 sm:p-10 flex flex-col xl:hidden">
-          <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8">Nossos Passeios</h1>
-          <ProductCarousel />
-        </div>
+        <h1 className="text-2xl sm:text-3xl font-bold text-center mb-8">Nossos Passeios</h1>
+        <ProductCarousel />
+      </div>
 
       {/* Features Section */}
       <section className="py-20 bg-background">
@@ -128,6 +131,7 @@ const Index = () => {
             </div>
             <div className="relative">
               <img
+                loading="lazy"
                 src={catamaranImage}
                 alt="Catamarã nos Parrachos Náutica"
                 className="rounded-lg shadow-xl animate-float w-full h-auto max-h-80 object-cover"
@@ -147,6 +151,7 @@ const Index = () => {
           <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <img
+                loading="lazy"
                 src={Cilindro07}
                 alt="Mergulho com cilindro nos Parrachos"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
@@ -184,29 +189,7 @@ const Index = () => {
       </section>
 
       {/* Gallery */}
-      <section className="mt-8 mb-8 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Galeria</h2>
-            <p className="text-xl text-muted-foreground">Veja as belezas que te esperam</p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-6">
-            {galery_data.map((img, key) => (
-              <div className="relative overflow-hidden rounded-lg group cursor-pointer h-56 sm:h-72 md:h-80" key={key}>
-                <img
-                  src={img.img}
-                  alt={`${img.subtitle}`}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                  <span className="text-white font-semibold text-xl">{img.subtitle}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Galery image_list={galery_data} />
 
       {/* CTA Section */}
       <section className="py-20 bg-gradient-ocean text-white">

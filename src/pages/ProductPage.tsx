@@ -3,6 +3,10 @@ import { products } from "@/data/productData";
 import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 
+import Footer from "@/components/Footer";
+import { Galery } from "@/components/Galery";
+import ProductCarousel from "@/components/ProductsCarousel";
+
 export default function ProductPage() {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
@@ -16,7 +20,7 @@ export default function ProductPage() {
       <Header />
 
       {/* Hero / Top */}
-      <div className="relative h-[300px]" style={{marginTop: 80}}>
+      <div className="relative h-[300px]" style={{ marginTop: 80 }}>
         <img
           src={product.image}
           alt={product.name}
@@ -52,34 +56,17 @@ export default function ProductPage() {
 
             {/* Destaques */}
             <div className="mt-6 flex flex-wrap gap-3">
-              {/* Example highlights; edit/remove as needed */}
-              <span className="inline-flex items-center gap-2 bg-sky-50 text-sky-800 px-3 py-1.5 rounded-full text-sm">
-                {/* boat icon */}
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path d="M3 13c3 1.5 6 2 9 2s6-.5 9-2v4H3v-4z" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
-                  <path d="M3 13l1.5-4h15L21 13" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
-                </svg>
-                Catamarã homologado
-              </span>
-
-              <span className="inline-flex items-center gap-2 bg-emerald-50 text-emerald-800 px-3 py-1.5 rounded-full text-sm">
-                {/* clock icon */}
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path d="M12 7v5l3 1" stroke="currentColor" strokeWidth="1.2" strokeLinecap="round" strokeLinejoin="round"></path>
-                  <circle cx="12" cy="12" r="9" stroke="currentColor" strokeWidth="1.2"></circle>
-                </svg>
-                Duração: 1h30 + deslocamento
-              </span>
-
-              <span className="inline-flex items-center gap-2 bg-amber-50 text-amber-800 px-3 py-1.5 rounded-full text-sm">
-                {/* location icon */}
-                <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none" aria-hidden>
-                  <path d="M12 11a3 3 0 100-6 3 3 0 000 6z" stroke="currentColor" strokeWidth="1.2"></path>
-                  <path d="M12 21s7-4.5 7-10a7 7 0 10-14 0c0 5.5 7 10 7 10z" stroke="currentColor" strokeWidth="1.2"></path>
-                </svg>
-                Local: Parrachos de Maracajaú
-              </span>
+              {product.highlights?.map((h, index) => (
+                <span
+                  key={index}
+                  className={`inline-flex items-center gap-2 bg-${h.color}-50 text-${h.color}-800 px-3 py-1.5 rounded-full text-sm`}
+                >
+                  {h.icon}
+                  {h.text}
+                </span>
+              ))}
             </div>
+
 
             {/* Benefits / inclusos */}
             {product.benefits?.length ? (
@@ -133,7 +120,7 @@ export default function ProductPage() {
 
                 <Button
                   type="button"
-                  
+
                   size="lg"
                   className="w-full hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
                   onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
@@ -156,32 +143,13 @@ export default function ProductPage() {
         </div>
       </div>
 
-      {/* Gallery */}
-      <section className="mt-8 mb-8 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-foreground mb-4">Galeria</h2>
-            <p className="text-xl text-muted-foreground">Veja as belezas que te esperam</p>
-          </div>
+      <Galery image_list={product.gallery} />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {product.gallery.length && (
-              product.gallery.map((img, i) => (
-                <div className="relative overflow-hidden rounded-lg group cursor-pointer h-80">
-                  <img
-                    src={img.img}
-                    alt={`${product.name} - ${i + 1}`}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-6">
-                    <span className="text-white font-semibold text-xl">{product.gallery[i].subtitle}</span>
-                  </div>
-                </div>
-              ))
-            )}
-          </div>
-        </div>
-      </section>
+      <div className="flex flex-col justify-center items-center my-16 px-4">
+        <h2 className="text-4xl font-bold text-foreground mb-4">Confira nossos passeios</h2>
+        <ProductCarousel />
+      </div>
+      <Footer />
     </main>
   );
 }

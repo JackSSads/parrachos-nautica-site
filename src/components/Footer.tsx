@@ -1,5 +1,5 @@
 import { Phone, MapPin, Mail } from "lucide-react";
-import LogoBranca from "../assets/logo_branca.png";
+import LogoBranca from "../assets/logos/logo_branca.webp";
 
 const Footer = () => {
   return (

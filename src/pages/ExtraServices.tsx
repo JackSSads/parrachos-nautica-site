@@ -67,6 +67,7 @@ const ExtraServices = () => {
               </div>
               <div className="relative">
                 <img
+                  loading="lazy"
                   src={services[0].image}
                   alt="Mergulho com cilindro"
                   className="rounded-lg shadow-2xl animate-float max-h-[400px] w-full object-cover"
