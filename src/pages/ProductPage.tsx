@@ -30,7 +30,7 @@ export default function ProductPage() {
               <nav className="text-sm text-white/90 mb-2">
                 <Link to="/" className="hover:text-white transition">Serviços</Link>
                 <span className="mx-2">›</span>
-                <span className="font-medium">{product.category || "Passeio"}</span>
+                <span className="font-medium">{product?.category || "Passeio"}</span>
               </nav>
 
               <h1 className="text-2xl md:text-4xl font-bold text-white mb-2 drop-shadow-2xl">{product.name}</h1>
