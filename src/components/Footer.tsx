@@ -38,7 +38,7 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Horário de Atendimento</h3>
             <div className="space-y-2 text-white/80">
               <p>Segunda a Domingo</p>
-              <p className="font-semibold text-white">8:00 - 20:00</p>
+              <p className="font-semibold text-white">8:00 - 22:00</p>
               <p className="text-sm mt-4">
                 *Passeios sujeitos a condições climáticas favoráveis e horários da maré
               </p>
