@@ -19,11 +19,16 @@ export default function ProductCarousel() {
             <Link
               to={`/produto/${item.slug}`}
               onClick={() => window.scrollTo({ top: 0 })}
-              className="bg-white rounded-2xl shadow p-6 max-w-md w-full hover:shadow-lg transition"
+              className="bg-white rounded-2xl shadow p-4 sm:p-6 w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] mx-auto hover:shadow-lg transition-transform duration-300 ease-[cubic-bezier(.22,.9,.32,1)] transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary"
             >
-              <img src={item.image} alt={item.name} className="w-full h-64 object-cover rounded-xl" />
-              <h3 className="text-xl font-semibold mt-4 text-gray-800">{item.name}</h3>
-              <p className="text-gray-600 mt-2">{item.shortDescription}</p>
+              <img loading="lazy" src={item.image} alt={item.name} className="w-full h-44 sm:h-52 md:h-64 object-cover rounded-xl" />
+              <h3 className="text-[clamp(1rem,2.2vw,1.25rem)] font-bold mt-4 text-gray-800">{item.name}</h3>
+              <p className="text-sm sm:text-base text-gray-600 mt-2 line-clamp-2">{item.shortDescription}</p>
+
+              <div className="pt-5 flex flex-col w-full">
+                <p className="text-sm text-gray-500">Por apenas</p>
+                <p className="text-2xl font-bold text-sky-700">{item.price}</p>
+              </div>
             </Link>
           </div>
         ))}
