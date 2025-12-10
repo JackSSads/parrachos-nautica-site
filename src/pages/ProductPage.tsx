@@ -132,13 +132,14 @@ export default function ProductPage() {
 
             <div className="mt-4 p-4 bg-secondary/20 rounded-lg border border-secondary">
               <p className="font-medium text-gray-800 mb-2">Segurança</p>
-              <p className="text-muted-foreground text-md leading-relaxed">Embarcação homologada pela Marinha, tripulação qualificada e coletes salva-vidas disponíveis.</p>
+              <p className="text-muted-foreground text-md leading-relaxed">{product.policy.security}</p>
             </div>
 
             <div className="mt-4 p-4 bg-secondary/20 rounded-lg border border-secondary">
               <p className="font-medium text-gray-800 mb-2">Política de cancelamento</p>
-              <p className="text-muted-foreground text-md leading-relaxed">Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas.</p>
+              <p className="text-muted-foreground text-md leading-relaxed">{product.policy.cancellation}</p>
             </div>
+
           </aside>
         </div>
       </div>

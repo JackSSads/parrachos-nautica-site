@@ -63,6 +63,12 @@ export const products = [
       "Duração: aproximadamente 30 minutos",
       "Explore profundidades que o snorkel não alcança",
     ],
+    policy: {
+      security: "Mergulho supervisionado por instrutor profissional",
+      cancellation: `Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas.
+      Passeios sujeitos a condições climáticas favoráveis.`,
+      weather: "Passeios sujeitos a condições climáticas favoráveis",
+    },
     highlights: [
       {
         color: "sky",
@@ -135,6 +141,12 @@ export const products = [
       "Duração: 1h30 de mergulho livre",
       "Explore a vida marinha próxima à superfície",
     ],
+    policy: {
+      security: "Caso o cliente não saiba nadar, é obrigatório o uso de colete ou bóias salva-vidas.",
+      cancellation: `Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas.
+      Passeios sujeitos a condições climáticas favoráveis.`,
+      weather: "",
+    },
     highlights: [
       {
         color: "sky",
@@ -186,6 +198,13 @@ export const products = [
       "Duração: 1h30 de passeio + deslocamento",
       "Aproveite a vista do litoral durante o trajeto",
     ],
+    policy: {
+      security: `Embarcação homologada pela Marinha, tripulação qualificada e coletes salva-vidas disponíveis.
+      Uso obrigatório de colete salva-vidas durante todo o passeio.`,
+      cancellation: `Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas.
+      Passeios sujeitos a condições climáticas favoráveis.`,
+      weather: "Passeios sujeitos a condições climáticas favoráveis",
+    },
     highlights: [
       {
         color: "sky",
@@ -245,6 +264,11 @@ export const products = [
       "Duração: 1h30 de passeio",
       "Explore trilhas naturais e paisagens incríveis",
     ],
+    policy: {
+      security: "Todo piloto deve ser maior de 18 anos e não pode estar sob efeito de álcool ou drogas.",
+      cancellation: "O cancelamento pode ser feito até 24 horas antes do passeio.",
+      weather: "",
+    },
     highlights: [
       {
         color: "sky",
