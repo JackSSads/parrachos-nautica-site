@@ -12,22 +12,36 @@ import {
   Coffee,
 } from "lucide-react";
 
-import Cartamara from "@/assets/catamaran.jpg";
+import { icons } from "@/libs/icons";
 
-import Snorkel01 from "@/assets/snorkel01.jpg";
-import Snorkel02 from "@/assets/snorkel02.jpg";
-import Snorkel03 from "@/assets/snorkel03.jpg";
+import Cartamara01 from "@/assets/catamara/catamara.webp";
+import Cartamara02 from "@/assets/catamara/catamara02.webp";
 
-import Cilindro01 from "@/assets/cilindro01.jpg"
-import Cilindro02 from "@/assets/cilindro02.jpg"
-import Cilindro03 from "@/assets/cilindro03.jpg"
-import Cilindro04 from "@/assets/cilindro04Casal.jpg"
-import Cilindro05 from "@/assets/cilindro05.jpg"
-import Cilindro06 from "@/assets/cilindro06.jpg"
-import Cilindro07 from "@/assets/cilindro07.jpg"
-import Cilindro08 from "@/assets/cilindro08.jpg"
+import Parrachos01 from "@/assets/parrachos/parrachos.webp";
+import Parrachos02 from "@/assets/parrachos/f_aerea.webp";
+import Parrachos03 from "@/assets/parrachos/f_aerea02.webp";
 
-import Quadriciclo01 from "@/assets/quadriciclho01.png";
+import Snorkel01 from "@/assets/snorkel/snorkel01.webp";
+import Snorkel02 from "@/assets/snorkel/snorkel02.webp";
+import Snorkel03 from "@/assets/snorkel/snorkel03.webp";
+
+import Cilindro01 from "@/assets/cilindro/cilindro01.webp"
+import Cilindro02 from "@/assets/cilindro/cilindro02.webp"
+import Cilindro03 from "@/assets/cilindro/cilindro03.webp"
+import Cilindro04 from "@/assets/cilindro/cilindro04.webp"
+import Cilindro05 from "@/assets/cilindro/cilindro05.webp"
+import Cilindro06 from "@/assets/cilindro/cilindro06.webp"
+import Cilindro07 from "@/assets/cilindro/cilindro07.webp"
+import Cilindro08 from "@/assets/cilindro/cilindro08.webp"
+
+import Quadriciclo02 from "@/assets/quadriciclo/quadriciclo02.webp";
+import Quadriciclo03 from "@/assets/quadriciclo/quadriciclo03.webp";
+import Quadriciclo04 from "@/assets/quadriciclo/quadriciclo04.webp";
+import Quadriciclo05 from "@/assets/quadriciclo/quadriciclo05.webp";
+import Quadriciclo08 from "@/assets/quadriciclo/quadriciclo08.webp";
+import Quadriciclo09 from "@/assets/quadriciclo/quadriciclo09.webp";
+import Quadriciclo10 from "@/assets/quadriciclo/quadriciclo10.webp";
+import Quadriciclo11 from "@/assets/quadriciclo/quadriciclo11.webp";
 
 export const products = [
   {
@@ -40,6 +54,32 @@ export const products = [
     cilindro. Guiado por instrutores credenciados, você explora mais profundamente os
     Parrachos de Maracajaú, observando de perto peixes coloridos, corais preservados
     e toda a vida marinha da região com total segurança e tranquilidade.`,
+    category: "Mergulho com cilindro",
+    benefits: [
+      "Acompanhamento de profissional credenciado",
+      "Equipamento completo fornecido",
+      "Ideal para iniciantes e experientes",
+      "Disponível para maiores de 10 anos",
+      "Duração: aproximadamente 30 minutos",
+      "Explore profundidades que o snorkel não alcança",
+    ],
+    highlights: [
+      {
+        color: "sky",
+        text: "Catamarã homologado",
+        icon: icons.boat
+      },
+      {
+        color: "emerald",
+        text: "Duração: 1h30 + deslocamento",
+        icon: icons.clock
+      },
+      {
+        color: "amber",
+        text: "Local: Parrachos de Maracajaú",
+        icon: icons.location
+      },
+    ],
     gallery: [
       {
         img: Cilindro04,
@@ -87,6 +127,31 @@ export const products = [
     meio do mar. Com snorkel incluso, plataforma de apoio e toda a orientação 
     necessária, você vive momentos incríveis explorando peixes, corais e toda 
     a riqueza natural do lugar.`,
+    category: "Mergulho livre",
+    benefits: [
+      "Máscara e snorkel inclusos",
+      "Plataforma de apoio no mar",
+      "Ideal para todas as idades",
+      "Duração: 1h30 de mergulho livre",
+      "Explore a vida marinha próxima à superfície",
+    ],
+    highlights: [
+      {
+        color: "sky",
+        text: "Catamarã homologado",
+        icon: icons.boat
+      },
+      {
+        color: "emerald",
+        text: "Duração: 1h30 + deslocamento",
+        icon: icons.clock
+      },
+      {
+        color: "amber",
+        text: "Local: Parrachos de Maracajaú",
+        icon: icons.location
+      },
+    ],
     gallery: [
       {
         img: Snorkel02,
@@ -107,16 +172,57 @@ export const products = [
     id: 3,
     name: "Passeio de catamarã",
     slug: "passeio-catamara",
-    image: Cartamara,
+    image: Cartamara01,
     shortDescription: "Uma viagem tranquila, segura e cheia de beleza natural.",
     description: `Embarque em um catamarã nativo homologado pela Marinha do Brasil,
     projetado para oferecer segurança, estabilidade e conforto para toda a família.
     Durante o trajeto até os Parrachos de Maracajaú, você aproveita o visual do
     litoral e a tranquilidade do mar aberto em uma experiência inesquecível.`,
+    category: "Passeio de catamarã",
+    benefits: [
+      "Catamarã homologado pela Marinha",
+      "Tripulação certificada e treinada",
+      "Ideal para toda a família",
+      "Duração: 1h30 de passeio + deslocamento",
+      "Aproveite a vista do litoral durante o trajeto",
+    ],
+    highlights: [
+      {
+        color: "sky",
+        text: "Catamarã homologado",
+        icon: icons.boat
+      },
+      {
+        color: "emerald",
+        text: "Duração: 1h30 + deslocamento",
+        icon: icons.clock
+      },
+      {
+        color: "amber",
+        text: "Local: Parrachos de Maracajaú",
+        icon: icons.location
+      },
+    ],
     gallery: [
       {
-        img: Cartamara,
+        img: Cartamara01,
         subtitle: "Passeio de catamarã confortável"
+      },
+      {
+        img: Cartamara02,
+        subtitle: "Navegação segura e estável"
+      },
+      {
+        img: Parrachos01,
+        subtitle: "Beleza natural dos Parrachos"
+      },
+      {
+        img: Parrachos02,
+        subtitle: "Águas cristalinas"
+      },
+      {
+        img: Parrachos03,
+        subtitle: "Experiência inesquecível"
       }
     ],
     price: "R$ 80,00"
@@ -125,19 +231,72 @@ export const products = [
     id: 4,
     name: "Passeio de quadriciclo",
     slug: "passeio-quadriciclo",
-    image: Quadriciclo01,
+    image: Quadriciclo02,
     shortDescription: "Aventura emocionante pelas trilhas de Maracajaú.",
     description: `Explore as belas paisagens naturais de Maracajaú em um passeio de
     quadriciclo. Aventura-se por trilhas emocionantes, desfrutando da liberdade
     e da adrenalina enquanto descobre cantos escondidos e vistas panorâmicas
     inesquecíveis.`,
+    category: "Aventura",
+    benefits: [
+      "Guias experientes e treinados",
+      "Equipamento de segurança fornecido",
+      "Ideal para aventureiros de todas as idades",
+      "Duração: 1h30 de passeio",
+      "Explore trilhas naturais e paisagens incríveis",
+    ],
+    highlights: [
+      {
+        color: "sky",
+        text: "Instrutores experientes",
+        icon: icons.boat
+      },
+      {
+        color: "emerald",
+        text: "Duração: 1h de passeio",
+        icon: icons.clock
+      },
+      {
+        color: "amber",
+        text: "Local: Praia de Maracajaú",
+        icon: icons.location
+      },
+    ],
     gallery: [
       {
-        img: Quadriciclo01,
-        subtitle: "Passeio de quadriciclo emocionante"
+        img: Quadriciclo02,
+        subtitle: "Explore trilhas naturais"
+      },
+      {
+        img: Quadriciclo03,
+        subtitle: "Aventura e adrenalina"
+      },
+      {
+        img: Quadriciclo04,
+        subtitle: "Descubra paisagens incríveis"
+      },
+      {
+        img: Quadriciclo05,
+        subtitle: "Liberdade sobre quatro rodas"
+      },
+      {
+        img: Quadriciclo08,
+        subtitle: "Aventura na natureza"
+      },
+      {
+        img: Quadriciclo09,
+        subtitle: "Explore cantos escondidos"
+      },
+      {
+        img: Quadriciclo10,
+        subtitle: "Diversão garantida"
+      },
+      {
+        img: Quadriciclo11,
+        subtitle: "Experiência inesquecível"
       }
     ],
-    price: "R$ 100,00"
+    price: "R$ 120,00"
   }
 ];
 
@@ -264,27 +423,31 @@ export const galery_data = [
     subtitle: "Explorando a vida marinha"
   },
   {
-    img: Cilindro03,
-    subtitle: "Beleza subaquática"
+    img: Cartamara01,
+    subtitle: "Passeio de catamarã confortável"
   },
   {
-    img: Cilindro04,
-    subtitle: "Seu parceiro de aventuras"
+    img: Parrachos02,
+    subtitle: "Águas cristalinas"
   },
   {
-    img: Cilindro05,
-    subtitle: "Momentos inesquecíveis"
+    img: Parrachos03,
+    subtitle: "Experiência inesquecível"
   },
   {
-    img: Cilindro06,
-    subtitle: "Aventuras subaquáticas"
+    img: Snorkel01,
+    subtitle: "Águas cristalinas dos Parrachos"
   },
   {
-    img: Cilindro07,
-    subtitle: "Mergulho com cilindro: segurança e diversão"
+    img: Snorkel03,
+    subtitle: "Explore a vida marinha"
   },
   {
-    img: Cilindro08,
-    subtitle: "Explorando as profundezas com segurança"
+    img: Quadriciclo02,
+    subtitle: "Explore trilhas naturais"
+  },
+  {
+    img: Quadriciclo05,
+    subtitle: "Liberdade sobre quatro rodas"
   }
 ];
