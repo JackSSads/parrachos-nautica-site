@@ -113,7 +113,7 @@ const Contact = () => {
                   <div className="space-y-4">
                     <div className="flex justify-between items-center py-3 border-b border-border">
                       <span className="text-muted-foreground">Segunda a Domingo</span>
-                      <span className="text-foreground font-semibold">8:00 - 20:00</span>
+                      <span className="text-foreground font-semibold">8:00 - 22:00</span>
                     </div>
                     <div className="bg-secondary/20 p-4 rounded-lg">
                       <p className="text-sm text-muted-foreground">
