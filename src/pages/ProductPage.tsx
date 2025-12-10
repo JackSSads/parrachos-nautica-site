@@ -146,8 +146,8 @@ export default function ProductPage() {
 
       <Galery image_list={product.gallery} />
 
-      <div className="flex flex-col justify-center items-center my-16 px-4">
-        <h2 className="text-4xl font-bold text-foreground mb-4">Confira nossos passeios</h2>
+      <div className="flex flex-col justify-center items-center my-16 px-4 gap-4">
+        <h2 className="text-4xl font-bold text-center">Confira nossos passeios</h2>
         <ProductCarousel />
       </div>
       <Footer />
