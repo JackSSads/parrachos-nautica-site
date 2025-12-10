@@ -12,11 +12,11 @@ export default function ProductPage() {
   }
 
   return (
-    <main className="flex flex-col pt-20 ">
+    <main className="flex flex-col">
       <Header />
 
       {/* Hero / Top */}
-      <div className="relative h-[300px]">
+      <div className="relative h-[300px]" style={{marginTop: 80}}>
         <img
           src={product.image}
           alt={product.name}
