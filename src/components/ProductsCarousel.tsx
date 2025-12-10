@@ -18,6 +18,7 @@ export default function ProductCarousel() {
           <div key={item.id} className="min-w-full flex justify-center p-6">
             <Link
               to={`/produto/${item.slug}`}
+              onClick={() => window.scrollTo({ top: 0 })}
               className="bg-white rounded-2xl shadow p-6 max-w-md w-full hover:shadow-lg transition"
             >
               <img src={item.image} alt={item.name} className="w-full h-64 object-cover rounded-xl" />
