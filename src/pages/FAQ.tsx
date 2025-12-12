@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import {
   Accordion,
@@ -9,58 +7,16 @@ import {
 } from "@/components/ui/accordion";
 import { Waves, HelpCircle } from "lucide-react";
 
+import { faqs } from "@/data/productData";
+
 import { useNavigate } from "react-router-dom";
 
 const FAQ = () => {
 
   const navigate = useNavigate();
 
-  const faqs = [
-    {
-      question: "Posso levar comida e bebida para o passeio?",
-      answer: "Sim, você pode levar seus próprios alimentos e bebidas. Também oferecemos um serviço de bar a bordo com bebidas e petiscos. Pedimos apenas que nos informe com antecedência caso traga itens próprios para melhor organização do espaço na embarcação.",
-    },
-    {
-      question: "Como funciona o cancelamento por mau tempo?",
-      answer: "A segurança é nossa prioridade. Se as condições climáticas ou do mar não estiverem favoráveis, entramos em contato com você para remarcar o passeio para outra data ou oferecer reembolso total de 100%, conforme sua preferência. Nossa equipe monitora constantemente as condições meteorológicas e marítimas.",
-    },
-    {
-      question: "Qual é o destino do passeio?",
-      answer: "O destino é os Parrachos Náutica, um dos principais pontos turísticos do Rio Grande do Norte. Localizados a aproximadamente 7 km da costa, em Maxaranguape, os Parrachos formam um grande aquário natural com águas cristalinas e rica biodiversidade marinha. É uma Área de Proteção Ambiental (APA) monitorada pelo IDEMA.",
-    },
-    {
-      question: "Como faço para reservar o passeio?",
-      answer: "Para reservar, entre em contato conosco através do WhatsApp pelo número disponível no site. Nossa equipe fornecerá informações sobre disponibilidade de datas, valores e formas de pagamento. Recomendamos fazer a reserva com antecedência, especialmente em alta temporada e feriados.",
-    },
-    {
-      question: "Crianças podem participar do passeio?",
-      answer: "Sim! Oferecemos coletes salva-vidas para crianças a partir de 3 anos. As crianças devem estar sempre acompanhadas por um responsável adulto. Para o mergulho com cilindro, a idade mínima é de 10 anos. Nossa equipe está treinada para auxiliar famílias com crianças durante todo o passeio.",
-    },
-    {
-      question: "Quanto tempo dura o passeio completo?",
-      answer: "O passeio completo tem duração aproximada de 2h30. Sendo: 30 minutos de navegação até os Parrachos, 1h30 de permanência para mergulho livre e exploração, e mais 30 minutos para o retorno à costa. O tempo pode variar ligeiramente dependendo das condições do mar.",
-    },
-    {
-      question: "O que está incluído no valor do passeio?",
-      answer: "O valor básico do passeio inclui: transporte de ida e volta no catamarã, equipamentos de snorkel (máscara e snorkel), coletes salva-vidas (se necessário), e acompanhamento completo da tripulação certificada durante toda a experiência. Serviços extras como mergulho com cilindro, fotos subaquáticas e máscara full face são cobrados à parte.",
-    },
-    {
-      question: "Preciso saber nadar para fazer o passeio?",
-      answer: "Não é obrigatório saber nadar, pois fornecemos coletes salva-vidas e nossa equipe oferece acompanhamento total durante o mergulho livre. No entanto, é importante informar à equipe caso você não saiba nadar ou tenha algum receio, para que possamos oferecer assistência personalizada e garantir sua segurança e conforto.",
-    },
-    {
-      question: "Qual é a melhor época para fazer o passeio?",
-      answer: "Os Parrachos Náutica podem ser visitados durante todo o ano. Os meses de setembro a março geralmente apresentam melhores condições de visibilidade na água. No entanto, o passeio acontece regularmente durante todo o ano, sempre respeitando as condições climáticas e de maré favoráveis.",
-    },
-    {
-      question: "Como é a estrutura na praia de embarque?",
-      answer: "A praia de Maracajaú, onde ocorre o embarque e desembarque, possui boa infraestrutura com restaurantes, banheiros, estacionamento e barracas. Recomendamos chegar com antecedência para facilitar o check-in e embarque no horário programado.",
-    },
-  ];
-
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-deep text-white">
@@ -159,8 +115,6 @@ const FAQ = () => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
