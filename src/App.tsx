@@ -10,6 +10,9 @@ import FAQ from "./pages/FAQ";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
 import ProductPage from "./pages/ProductPage";
+import { ToTop } from "./components/ToTop";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const queryClient = new QueryClient();
 
@@ -19,15 +22,20 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Index />} />
-          <Route path="/sobre" element={<AboutTour />} />
-          <Route path="/servicos" element={<ExtraServices />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/contato" element={<Contact />} />
-          <Route path="/produto/:slug" element={<ProductPage />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <div>
+          <Header />
+          <Routes>
+            <Route path="/" element={<Index />} />
+            <Route path="/sobre" element={<AboutTour />} />
+            <Route path="/servicos" element={<ExtraServices />} />
+            <Route path="/faq" element={<FAQ />} />
+            <Route path="/contato" element={<Contact />} />
+            <Route path="/produto/:slug" element={<ProductPage />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+          <ToTop />
+          <Footer />
+        </div>
       </BrowserRouter>
     </TooltipProvider>
   </QueryClientProvider>
