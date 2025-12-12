@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Leaf, Waves, Camera } from "lucide-react";
@@ -16,7 +14,6 @@ const AboutTour = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-deep text-white">
@@ -224,8 +221,6 @@ const AboutTour = () => {
           </div>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

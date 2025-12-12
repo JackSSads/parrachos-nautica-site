@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -10,7 +8,6 @@ import { services } from "@/data/productData";
 const ExtraServices = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-deep text-white">
@@ -187,8 +184,6 @@ const ExtraServices = () => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

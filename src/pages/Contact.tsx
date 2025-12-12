@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Waves } from "lucide-react";
@@ -7,7 +5,6 @@ import { Phone, Mail, MapPin, Clock, MessageCircle, Waves } from "lucide-react";
 const Contact = () => {
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-20 bg-gradient-deep text-white">
@@ -262,8 +259,6 @@ const Contact = () => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };

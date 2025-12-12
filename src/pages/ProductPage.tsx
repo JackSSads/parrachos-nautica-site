@@ -1,9 +1,7 @@
 import { useParams, Link } from "react-router-dom";
 import { products } from "@/data/productData";
-import Header from "@/components/Header";
 import { Button } from "@/components/ui/button";
 
-import Footer from "@/components/Footer";
 import { Galery } from "@/components/Galery";
 import ProductCarousel from "@/components/ProductsCarousel";
 
@@ -17,7 +15,6 @@ export default function ProductPage() {
 
   return (
     <main className="flex flex-col">
-      <Header />
 
       {/* Hero / Top */}
       <div className="relative h-[300px]" style={{ marginTop: 80 }}>
@@ -150,7 +147,6 @@ export default function ProductPage() {
         <h2 className="text-4xl font-bold text-center">Confira nossos passeios</h2>
         <ProductCarousel />
       </div>
-      <Footer />
     </main>
   );
 }

@@ -1,5 +1,3 @@
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 import { Galery } from "@/components/Galery";
 
 import { Button } from "@/components/ui/button";
@@ -20,7 +18,6 @@ const Index = () => {
 
   return (
     <div className="min-h-screen flex flex-col">
-      <Header />
 
       {/* Hero Section */}
       <section className="relative pt-16 md:pt-20 min-h-[70vh] md:min-h-screen flex items-center">
@@ -213,8 +210,6 @@ const Index = () => {
           </Button>
         </div>
       </section>
-
-      <Footer />
     </div>
   );
 };
