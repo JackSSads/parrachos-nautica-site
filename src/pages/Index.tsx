@@ -34,7 +34,7 @@ const Index = () => {
               Descubra o Aquário Natural do RN
             </h1>
             <p className="text-base sm:text-lg md:text-xl text-white/95 mb-8 leading-relaxed">
-              Mergulhe nos Parrachos Náutica, um paraíso preservado a 7 km da costa com águas cristalinas e vida marinha exuberante.
+              Venha conhecer nos Parrachos de Maracajaú, um paraíso preservado a 7 km da costa com águas cristalinas e vida marinha exuberante.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button
