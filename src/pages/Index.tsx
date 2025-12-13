@@ -3,9 +3,7 @@ import { Galery } from "@/components/Galery";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
-import Parrachos from "@/assets/parrachos/f_aerea.webp";
-import catamaranImage from "@/assets/catamara/catamara.webp";
-import Cilindro07 from "@/assets/cilindro/cilindro07.webp";
+import { cilindro, catamara, parrachos } from "@/assets";
 import { useNavigate } from "react-router-dom";
 import { Waves, ShieldCheck, Leaf, Users } from "lucide-react";
 
@@ -23,7 +21,7 @@ const Index = () => {
       <section className="relative pt-16 md:pt-20 min-h-[70vh] md:min-h-screen flex items-center">
         <div
           className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${Parrachos})` }}
+          style={{ backgroundImage: `url(${parrachos.Parrachos02})` }}
         >
           <div className="absolute inset-0 bg-gradient-to-b from-primary/80 via-primary/60 to-primary/80" />
         </div>
@@ -129,7 +127,7 @@ const Index = () => {
             <div className="relative">
               <img
                 loading="lazy"
-                src={catamaranImage}
+                src={catamara.Catamara01}
                 alt="Catamarã nos Parrachos Náutica"
                 className="rounded-lg shadow-xl animate-float w-full h-auto max-h-80 object-cover"
               />
@@ -141,7 +139,7 @@ const Index = () => {
       {/* Diving Highlight Section */}
       <section className="py-20 bg-gradient-deep text-white relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0" style={{ backgroundImage: `url(${Cilindro07})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
+          <div className="absolute inset-0" style={{ backgroundImage: `url(${cilindro.Cilindro07})`, backgroundSize: 'cover', backgroundPosition: 'center' }} />
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -149,7 +147,7 @@ const Index = () => {
             <div>
               <img
                 loading="lazy"
-                src={Cilindro07}
+                src={cilindro.Cilindro07}
                 alt="Mergulho com cilindro nos Parrachos"
                 className="rounded-lg shadow-2xl w-full h-auto object-cover"
               />

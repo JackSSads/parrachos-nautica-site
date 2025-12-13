@@ -1,8 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Shield, Leaf, Waves, Camera } from "lucide-react";
-import catamaranImage from "@/assets/catamara/catamara.webp";
-import Parrachos from "@/assets/parrachos/f_aerea02.webp";
+import { parrachos, catamara } from "@/assets";
 
 import { tourDetails } from "@/data/productData";
 
@@ -128,7 +127,7 @@ const AboutTour = () => {
             <div className="relative overflow-hidden rounded-lg shadow-xl h-96">
               <img
                 loading="lazy"
-                src={catamaranImage}
+                src={catamara.Catamara01}
                 alt="Catamarã"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
@@ -140,7 +139,7 @@ const AboutTour = () => {
             <div className="relative overflow-hidden rounded-lg shadow-xl h-96">
               <img
                 loading="lazy"
-                src={Parrachos}
+                src={parrachos.Parrachos03}
                 alt="Parrachos"
                 className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
               />
