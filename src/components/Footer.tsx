@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "@/libs/icons.js";
 
 const Footer = () => {
   return (
-    <footer className="bg-gradient-deep text-white py-12">
+    <footer className="bg-gradient-deep text-white py-16">
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
