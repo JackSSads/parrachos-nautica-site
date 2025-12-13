@@ -1,3 +1,7 @@
+import LogoBranca from "@/assets/logos/logo_branca.webp";
+import Logo from "@/assets/logos/logo.webp";
+import Logo2 from "@/assets/logos/logo2.webp";
+
 import Catamara01 from "@/assets/catamara/catamara.webp";
 import Catamara02 from "@/assets/catamara/catamara02.webp";
 
@@ -64,6 +68,12 @@ const quadriciclo = {
     Quadriciclo09,
     Quadriciclo10,
     Quadriciclo11,
-}
+};
 
-export { catamara, parrachos, snorkel, cilindro, quadriciclo }
+const logo = {
+    Logo,
+    Logo2,
+    LogoBranca
+};
+
+export { catamara, parrachos, snorkel, cilindro, quadriciclo, logo };
