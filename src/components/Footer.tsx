@@ -1,5 +1,6 @@
-import { Phone, MapPin, Mail } from "lucide-react";
-import LogoBranca from "../assets/logos/logo_branca.webp";
+import { Phone, MapPin, Mail, Instagram } from "lucide-react";
+import { logo } from "@/assets";
+import { WhatsAppIcon } from "@/libs/icons.js";
 
 const Footer = () => {
   return (
@@ -8,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <img src={LogoBranca} className="p-1 w-28 rounded-xl" />
+              <img src={logo.LogoBranca} className="p-1 w-28 rounded-xl" />
               <span className="font-bold text-xl">Parrachos Náutica</span>
             </div>
             <p className="text-white/80">
@@ -20,8 +21,16 @@ const Footer = () => {
             <h3 className="font-semibold text-lg mb-4">Contato</h3>
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
+                <WhatsAppIcon />
+                <span>(84) 9 9921-1789</span>
+              </div>
+              <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
                 <span>(84) 9 9995-9793</span>
+              </div>
+              <div className="flex items-center gap-2">
+                <Instagram className="w-5 h-5" />
+                <span>@parrachosnautica</span>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
@@ -40,7 +49,7 @@ const Footer = () => {
               <p>Segunda a Domingo</p>
               <p className="font-semibold text-white">8:00 - 22:00</p>
               <p className="text-sm mt-4">
-                *Passeios sujeitos a condições climáticas favoráveis e horários da maré
+                *Passeios sujeitos a condições climáticas favoráveis e horários da maré.
               </p>
             </div>
           </div>
