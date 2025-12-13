@@ -1,7 +1,7 @@
 import { NavLink } from "./NavLink";
 import { ArrowUp, InstagramIcon } from "lucide-react";
 import { Button } from "./ui/button";
-import { WhatsAppIcon } from "@/libs/icons.jsx";
+import { WhatsAppIcon } from "@/libs/icons";
 
 export const ToTop = () => {
     return (
@@ -27,9 +27,7 @@ export const ToTop = () => {
                 h-10 w-10 hover:bg-white-500
                 hover:text-white delay-100"
             >
-                <div className=" border-2 rounded-full p-1">
-                    <WhatsAppIcon />
-                </div>
+                <WhatsAppIcon />
             </NavLink>
 
             <Button
