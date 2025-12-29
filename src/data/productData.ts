@@ -50,16 +50,16 @@ export const products = [
   },
   {
     id: 2,
-    name: "Mergulho livre",
-    slug: "mergulho-livre",
+    name: "Mergulho livre + Passeio de Catamarã",
+    slug: "mergulho-livre+catamara",
     image: snorkel.Snorkel02,
     shortDescription: "Explore os Parrachos com snorkel e águas cristalinas.",
-    description: `Descubra a magia dos Parrachos de Maracajaú com um mergulho livre em águas cristalinas que formam verdadeiras piscinas naturais no meio do mar. Com snorkel incluso, plataforma de apoio e toda a orientação  necessária, você vive momentos incríveis explorando peixes, corais e toda a riqueza natural do lugar.`,
-    category: "Mergulho livre",
-    benefits: ["Máscara e snorkel inclusos", "Plataforma de apoio no mar", "Ideal para todas as idades", "Duração: 1h30 de mergulho livre", "Explore a vida marinha próxima à superfície"],
+    description: "Descubra a magia dos Parrachos de Maracajaú com um mergulho livre em águas cristalinas que formam verdadeiras piscinas naturais no meio do mar. Com snorkel incluso, plataforma de apoio e toda a orientação  necessária, você vive momentos incríveis explorando peixes, corais e toda a riqueza natural do lugar.",
+    category: "Mergulho livre + Passeio de catamarã",
+    benefits: ["Embarcação exclusiva", "", "Máscara e snorkel inclusos", "Ideal para todas as idades", "Duração: 1h30 de mergulho livre", "Explore a vida marinha próxima à superfície"],
     policy: {
-      security: "Caso o cliente não saiba nadar, é obrigatório o uso de colete ou bóias salva-vidas.",
-      cancellation: `Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas. Passeios sujeitos a condições climáticas favoráveis.`,
+      security: "Caso o cliente não saiba nadar, é obrigatório o uso de colete ou bóias salva-vidas. Embarcação homologada pela Marinha, tripulação qualificada e coletes salva-vidas disponíveis. Uso obrigatório de colete salva-vidas durante todo o passeio.",
+      cancellation: "Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas. Passeios sujeitos a condições climáticas favoráveis.",
       weather: "",
     },
     highlights: [
@@ -70,30 +70,7 @@ export const products = [
     gallery: [
       { img: snorkel.Snorkel02, subtitle: "Mergulho livre com snorkel" },
       { img: snorkel.Snorkel01, subtitle: "Águas cristalinas dos Parrachos" },
-      { img: snorkel.Snorkel03, subtitle: "Explore a vida marinha" }
-    ],
-    price: "R$ 80,00"
-  },
-  {
-    id: 3,
-    name: "Passeio de catamarã",
-    slug: "passeio-catamara",
-    image: catamara.Catamara01,
-    shortDescription: "Uma viagem tranquila, segura e cheia de beleza natural.",
-    description: `Embarque em um catamarã nativo homologado pela Marinha do Brasil, projetado para oferecer segurança, estabilidade e conforto para toda a família. Durante o trajeto até os Parrachos de Maracajaú, você aproveita o visual do litoral e a tranquilidade do mar aberto em uma experiência inesquecível.`,
-    category: "Passeio de catamarã",
-    benefits: ["Catamarã homologado pela Marinha", "Tripulação certificada e treinada", "Ideal para toda a família", "Duração: 1h30 de passeio + deslocamento", "Aproveite a vista do litoral durante o trajeto"],
-    policy: {
-      security: `Embarcação homologada pela Marinha, tripulação qualificada e coletes salva-vidas disponíveis. Uso obrigatório de colete salva-vidas durante todo o passeio.`,
-      cancellation: `Reagendamos ou reembolsamos 100% em caso de condições climáticas adversas. Passeios sujeitos a condições climáticas favoráveis.`,
-      weather: "Passeios sujeitos a condições climáticas favoráveis",
-    },
-    highlights: [
-      { color: "sky", text: "Catamarã homologado", icon: icons.boat },
-      { color: "emerald", text: "Duração: 1h30 + deslocamento", icon: icons.clock },
-      { color: "amber", text: "Local: Parrachos de Maracajaú", icon: icons.location }
-    ],
-    gallery: [
+      { img: snorkel.Snorkel03, subtitle: "Explore a vida marinha" },
       { img: catamara.Catamara01, subtitle: "Passeio de catamarã confortável" },
       { img: catamara.Catamara02, subtitle: "Navegação segura e estável" },
       { img: parrachos.Parrachos01, subtitle: "Beleza natural dos Parrachos" },
