@@ -25,9 +25,12 @@ export default function ProductCarousel() {
               <h3 className="text-[clamp(1rem,2.2vw,1.25rem)] font-bold mt-4 text-gray-800">{item.name}</h3>
               <p className="text-sm sm:text-base text-gray-600 mt-2 line-clamp-2">{item.shortDescription}</p>
 
-              <div className="pt-5 flex flex-col w-full">
-                <p className="text-sm text-gray-500">Por apenas</p>
-                <p className="text-2xl font-bold text-sky-700">{item.price}</p>
+              <div className="pt-5 flex justify-between items-end w-full">
+                <div className="flex flex-col">
+                  <p className="text-sm text-gray-500">Por apenas</p>
+                  <p className="text-2xl font-bold text-sky-700">{item.price}</p>
+                </div>
+                <p className="underline text-accent hover:scale-105 transition-all delay-75">Saiba mais</p>
               </div>
             </Link>
           </div>
