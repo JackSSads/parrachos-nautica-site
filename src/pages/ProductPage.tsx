@@ -1,3 +1,4 @@
+import { useRef } from "react";
 import { useParams, Link } from "react-router-dom";
 import { products } from "@/data/productData";
 import { Button } from "@/components/ui/button";
@@ -8,10 +9,12 @@ import ProductCarousel from "@/components/ProductsCarousel";
 export default function ProductPage() {
   const { slug } = useParams();
   const product = products.find((p) => p.slug === slug);
+  const galleryRef = useRef(null);
 
   if (!product) {
     return <p className="text-center mt-20 text-gray-600">Produto não encontrado.</p>;
-  }
+  };
+
 
   return (
     <main className="flex flex-col">
@@ -121,7 +124,7 @@ export default function ProductPage() {
 
                   size="lg"
                   className="w-full hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
-                  onClick={() => window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })}
+                  onClick={() => galleryRef.current.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Ver galeria
                 </Button>
@@ -142,7 +145,7 @@ export default function ProductPage() {
         </div>
       </div>
 
-      <Galery image_list={product.gallery} />
+      <Galery image_list={product.gallery} galleryRef={galleryRef} />
 
       <div className="flex flex-col justify-center items-center my-16 px-4 gap-4">
         <h2 className="text-4xl font-bold text-center">Confira nossos passeios</h2>

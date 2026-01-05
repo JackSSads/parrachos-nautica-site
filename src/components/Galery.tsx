@@ -1,6 +1,6 @@
-export const Galery = ({ image_list }) => {
+export const Galery = ({ image_list, galleryRef }) => {
     return (
-        <section className="mt-8 mb-8 bg-background">
+        <section className="mt-8 mb-8 bg-background" ref={galleryRef}>
             <div className="container mx-auto px-4">
                 <div className="text-center mb-12">
                     <h2 className="text-4xl font-bold text-foreground mb-4">Galeria</h2>
