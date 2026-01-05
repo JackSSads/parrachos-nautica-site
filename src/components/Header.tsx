@@ -3,6 +3,7 @@ import { NavLink } from "@/components/NavLink";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import Logo from "@/assets/logos/logo.webp";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -17,6 +18,16 @@ const Header = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border shadow-sm">
+      <div className="h-8 bg-gradient-deep flex justify-center items-center">
+        <p className="text-white text-sm font-semibold flex gap-1">
+          Entre em contado pelo WhatsApp
+          <NavLink
+            to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+            className="underline"
+            target="_blank"
+          >(84) 9 9988-7766</NavLink>
+        </p>
+      </div>
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <NavLink to="/" className="flex items-center gap-2 text-primary font-bold text-xl">
@@ -38,13 +49,13 @@ const Header = () => {
               </NavLink>
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0">
-              <a
-                href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+              <Link
+                to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Reservar Agora
-              </a>
+              </Link>
             </Button>
           </nav>
 
@@ -73,13 +84,13 @@ const Header = () => {
               </NavLink>
             ))}
             <Button asChild className="bg-gradient-ocean text-white border-0 w-full">
-              <a
-                href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+              <Link
+                to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 Reservar Agora
-              </a>
+              </Link>
             </Button>
           </nav>
         )}

@@ -9,6 +9,7 @@ import { Waves, ShieldCheck, Leaf, Users } from "lucide-react";
 
 import ProductCarousel from "@/components/ProductsCarousel";
 import { features, galery_data } from "@/data/productData";
+import { Link } from "react-router-dom";
 
 const Index = () => {
 
@@ -40,13 +41,13 @@ const Index = () => {
                 size="lg"
                 className="bg-accent hover:bg-accent/90 text-white text-lg px-6 py-3 sm:px-8 sm:py-6 border-0"
               >
-                <a
-                  href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                <Link
+                  to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Reservar Agora
-                </a>
+                </Link>
               </Button>
               <Button
                 asChild
@@ -198,13 +199,13 @@ const Index = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white text-lg px-6 py-3 sm:px-8 sm:py-6 border-0"
           >
-            <a
-              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+            <Link
+              to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >
               Fale Conosco no WhatsApp
-            </a>
+            </Link>
           </Button>
         </div>
       </section>

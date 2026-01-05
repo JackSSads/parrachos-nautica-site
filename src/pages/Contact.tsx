@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Phone, Mail, MapPin, Clock, MessageCircle, Waves } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Contact = () => {
   return (
@@ -32,9 +33,9 @@ const Contact = () => {
                   <Phone className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">Telefone</h3>
-                <p className="text-muted-foreground mb-4">(84) 9 9995-9793</p>
+                <p className="text-muted-foreground mb-4">(84) 9 9621-1431</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a href="tel:+5584999959793">Ligar Agora</a>
+                  <Link to="tel:+5584996211431">Ligar Agora</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -45,15 +46,15 @@ const Contact = () => {
                   <MessageCircle className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-lg font-semibold text-foreground mb-2">WhatsApp</h3>
-                <p className="text-muted-foreground mb-4">(84) 9 9995-9793</p>
+                <p className="text-muted-foreground mb-4">(84) 9 9621-1431</p>
                 <Button asChild className="w-full bg-gradient-ocean text-white border-0">
-                  <a
-                    href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                  <Link
+                    to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Enviar Mensagem
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -66,7 +67,7 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-2">E-mail</h3>
                 <p className="text-muted-foreground mb-4 text-sm">parrachosnautica2@gmail.com</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a href="mailto:parrachosnautica2@gmail.com">Enviar E-mail</a>
+                  <Link to="mailto:parrachosnautica2@gmail.com">Enviar E-mail</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -79,13 +80,13 @@ const Contact = () => {
                 <h3 className="text-lg font-semibold text-foreground mb-2">Localização</h3>
                 <p className="text-muted-foreground mb-4 text-sm">Maracajaú, Maxaranguape - RN</p>
                 <Button asChild variant="outline" className="w-full">
-                  <a
-                    href="https://maps.google.com/?q=Maracajaú,Maxaranguape,RN"
+                  <Link
+                    to="https://maps.google.com/?q=Maracajaú,Maxaranguape,RN"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Ver no Mapa
-                  </a>
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -146,13 +147,13 @@ const Contact = () => {
                       </p>
                     </div>
                     <Button asChild className="w-full bg-gradient-ocean text-white border-0 mt-4">
-                      <a
-                        href="https://maps.google.com/?q=Maracajaú,Maxaranguape,RN"
+                      <Link
+                        to="https://maps.google.com/?q=Maracajaú,Maxaranguape,RN"
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         Abrir no Google Maps
-                      </a>
+                      </Link>
                     </Button>
                   </div>
                 </CardContent>
@@ -249,13 +250,13 @@ const Contact = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
-            <a
-              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+            <Link
+              to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >
               Falar no WhatsApp Agora
-            </a>
+            </Link>
           </Button>
         </div>
       </section>

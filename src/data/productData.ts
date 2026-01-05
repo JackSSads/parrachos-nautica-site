@@ -46,7 +46,9 @@ export const products = [
       { img: cilindro.Cilindro07, subtitle: "Aventuras subaquáticas" },
       { img: cilindro.Cilindro08, subtitle: "Experiência inesquecível" }
     ],
-    price: "R$ 120,00"
+    price: "R$ 150,00",
+    promo: "20% OFF",
+    promo_price: "R$ 120,00"
   },
   {
     id: 2,
@@ -108,7 +110,9 @@ export const products = [
       { img: quadriciclo.Quadriciclo10, subtitle: "Diversão garantida" },
       { img: quadriciclo.Quadriciclo11, subtitle: "Experiência inesquecível" }
     ],
-    price: "R$ 120,00"
+    price: "R$ 170,00",
+    promo: "R$50 OFF",
+    promo_price: "R$ 120,00"
   }
 ];
 

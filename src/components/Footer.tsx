@@ -1,6 +1,7 @@
 import { Phone, MapPin, Mail, Instagram } from "lucide-react";
 import { logo } from "@/assets";
 import { WhatsAppIcon } from "@/libs/icons.js";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -22,23 +23,25 @@ const Footer = () => {
             <div className="space-y-3 text-white/80">
               <div className="flex items-center gap-2">
                 <WhatsAppIcon />
-                <span>(84) 9 9921-1789</span>
+                <Link to={"https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"}
+                >(84) 9 9921-1789</Link>
               </div>
               <div className="flex items-center gap-2">
                 <Phone className="w-5 h-5" />
-                <span>(84) 9 9995-9793</span>
+                <Link to="tel:+5584996211431">(84) 9 9621-1431</Link>
               </div>
               <div className="flex items-center gap-2">
                 <Instagram className="w-5 h-5" />
-                <span>@parrachosnautica</span>
+                <Link to="https://www.instagram.com/parrachosnautica/"
+                >@parrachosnautica</Link>
               </div>
               <div className="flex items-center gap-2">
                 <Mail className="w-5 h-5" />
-                <span>parrachosnautica2@gmail.com</span>
+                <Link to={"mailto:parrachosnautica2@gmail.com"}>parrachosnautica2@gmail.com</Link>
               </div>
               <div className="flex items-center gap-2">
                 <MapPin className="w-5 h-5" />
-                <span>Maracajaú, Maxaranguape - RN</span>
+                <Link to="https://maps.google.com/?q=Maracajaú,Maxaranguape,RN">Maracajaú, Maxaranguape - RN</Link>
               </div>
             </div>
           </div>

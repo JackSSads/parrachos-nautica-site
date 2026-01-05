@@ -17,7 +17,7 @@ export default function ProductPage() {
     <main className="flex flex-col">
 
       {/* Hero / Top */}
-      <div className="relative h-[300px]" style={{ marginTop: 80 }}>
+      <div className="relative h-[300px]" style={{ marginTop: 110 }}>
         <img
           src={product.image}
           alt={product.name}
@@ -91,7 +91,8 @@ export default function ProductPage() {
               <div className="flex items-center justify-between">
                 <div>
                   <p className="text-sm text-gray-500">Por apenas</p>
-                  <p className="text-2xl font-bold text-sky-700">{product.price}</p>
+                  <p className={`text-2xl font-bold ${product?.promo ? "line-through text-sm text-orange-500" : "text-sky-700"}`}>{product.price}</p>
+                  <p className={`${product?.promo ? "text-2xl font-bold text-sky-700 " : "hidden"}`}>{product?.promo_price}</p>
                 </div>
                 <div className="text-center">
                   <p className="text-xs text-gray-400">Vagas</p>
@@ -106,13 +107,13 @@ export default function ProductPage() {
                   size="lg"
                   className="w-full bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
                 >
-                  <a
-                    href={`https://wa.me/5584999959793?text=Olá!%20Quero%20reservar%20o%20serviço%20de%20%20${encodeURIComponent(product.name)}`}
+                  <Link
+                    to={`https://wa.me/5584996211431?text=Olá!%20Quero%20reservar%20o%20serviço%20de%20%20${encodeURIComponent(product.name)}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Reservar Agora
-                  </a>
+                  </Link>
                 </Button>
 
                 <Button

@@ -13,25 +13,31 @@ export const ToTop = () => {
                 from-[#feda75] via-[#fa7e1e]
                 via-[#d62976] to-[#4f5bd5]
                 text-white rounded-full h-10 w-10
-                hover:opacity-90 transition"
+                hover:opacity-90 transition hover:scale-125"
+                target="_blank"
             >
                 <InstagramIcon />
             </NavLink>
 
             <NavLink
-                to="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+                to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
                 className="
                 bg-green-500 flex
                 justify-center items-center
                 text-white rounded-full
                 h-10 w-10 hover:bg-white-500
-                hover:text-white delay-100"
+                hover:text-white delay-100 hover:scale-125"
+                target="_blank"
             >
                 <WhatsAppIcon />
             </NavLink>
 
             <Button
-                className="rounded-full bg-secondary h-10 w-10 flex justify-center items-center shadow-md text-white cursor-pointer"
+                className="
+                rounded-full bg-secondary
+                h-10 w-10 flex justify-center
+                items-center shadow-md text-white
+                cursor-pointer hover:scale-125"
                 onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             >
                 <ArrowUp />

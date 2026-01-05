@@ -2,6 +2,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Waves, Cylinder } from "lucide-react";
+import { Link } from "react-router-dom";
 
 import { services } from "@/data/productData";
 
@@ -53,13 +54,13 @@ const ExtraServices = () => {
                   size="lg"
                   className="bg-gradient-ocean text-white border-0"
                 >
-                  <a
-                    href="https://wa.me/5584999959793?text=Olá! Gostaria de saber mais sobre o mergulho com cilindro"
+                  <Link
+                    to="https://wa.me/5584996211431?text=Olá! Gostaria de saber mais sobre o mergulho com cilindro"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     Solicitar Orçamento
-                  </a>
+                  </Link>
                 </Button>
               </div>
               <div className="relative">
@@ -112,13 +113,13 @@ const ExtraServices = () => {
                     variant="outline"
                     className="w-full border-primary text-primary hover:bg-primary hover:text-white"
                   >
-                    <a
-                      href={`https://wa.me/5584999959793?text=Olá! Gostaria de saber mais sobre: ${service.title}`}
+                    <Link
+                      to={`https://wa.me/5584996211431?text=Olá! Gostaria de saber mais sobre: ${service.title}`}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
                       Mais Informações
-                    </a>
+                    </Link>
                   </Button>
                 </CardContent>
               </Card>
@@ -174,13 +175,13 @@ const ExtraServices = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
-            <a
-              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva e saber mais sobre os serviços extras"
+            <Link
+              to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva e saber mais sobre os serviços extras"
               target="_blank"
               rel="noopener noreferrer"
             >
               Fale Conosco no WhatsApp
-            </a>
+            </Link>
           </Button>
         </div>
       </section>

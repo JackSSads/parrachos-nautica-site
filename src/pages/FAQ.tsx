@@ -10,6 +10,7 @@ import { Waves, HelpCircle } from "lucide-react";
 import { faqs } from "@/data/productData";
 
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const FAQ = () => {
 
@@ -72,13 +73,13 @@ const FAQ = () => {
                 size="lg"
                 className="bg-gradient-ocean text-white border-0"
               >
-                <a
-                  href="https://wa.me/5584999959793?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos Náutica"
+                <Link
+                  to="https://wa.me/5584996211431?text=Olá! Tenho algumas dúvidas sobre o passeio aos Parrachos Náutica"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
                   Falar no WhatsApp
-                </a>
+                </Link>
               </Button>
               <Button
                 asChild
@@ -105,13 +106,13 @@ const FAQ = () => {
             size="lg"
             className="bg-accent hover:bg-accent/90 text-white text-lg px-8 py-6 border-0"
           >
-            <a
-              href="https://wa.me/5584999959793?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
+            <Link
+              to="https://wa.me/5584996211431?text=Olá! Gostaria de fazer uma reserva para o passeio aos Parrachos Náutica"
               target="_blank"
               rel="noopener noreferrer"
             >
               Reservar Agora
-            </a>
+            </Link>
           </Button>
         </div>
       </section>

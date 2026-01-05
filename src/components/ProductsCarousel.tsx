@@ -21,6 +21,11 @@ export default function ProductCarousel() {
               onClick={() => window.scrollTo({ top: 0 })}
               className="bg-white rounded-2xl shadow p-4 sm:p-6 w-full max-w-[320px] sm:max-w-[420px] md:max-w-[520px] mx-auto hover:shadow-lg transition-transform duration-300 ease-[cubic-bezier(.22,.9,.32,1)] transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-primary"
             >
+              {item?.promo && (
+                <div className="h-14 w-14 flex items-center bg-green-500 rounded-full absolute right-1 top-1 text-white text-wrap text-center font-bold shadow-md shadow-gray-700/50">
+                  {item?.promo}
+                </div>
+              )}
               <img loading="lazy" src={item.image} alt={item.name} className="w-full h-44 sm:h-52 md:h-64 object-cover rounded-xl" />
               <h3 className="text-[clamp(1rem,2.2vw,1.25rem)] font-bold mt-4 text-gray-800">{item.name}</h3>
               <p className="text-sm sm:text-base text-gray-600 mt-2 line-clamp-2">{item.shortDescription}</p>
@@ -28,7 +33,8 @@ export default function ProductCarousel() {
               <div className="pt-5 flex justify-between items-end w-full">
                 <div className="flex flex-col">
                   <p className="text-sm text-gray-500">Por apenas</p>
-                  <p className="text-2xl font-bold text-sky-700">{item.price}</p>
+                  <p className={`text-2xl font-bold ${item?.promo ? "line-through text-sm text-orange-500" : "text-sky-700"}`}>{item.price}</p>
+                  <p className={`text-2xl font-bold ${item?.promo ? "text-sky-700" : "hidden"}`}>{item?.promo_price}</p>
                 </div>
                 <p className="underline text-accent hover:scale-105 transition-all delay-75">Saiba mais</p>
               </div>
